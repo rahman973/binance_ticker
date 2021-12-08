@@ -1,0 +1,6 @@
+{
+  "appName": "algo trading",
+  "contactEmail": "chrahman973@gmail.com",
+  "dbURL": "mongodb://localhost:27017/algo-trading",
+  "appSecretKey": "a9#dsiu44f$sd3"
+}
