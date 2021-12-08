@@ -28,18 +28,6 @@ const binance = new Binance().options({
 
 global.binance = binance;
 
-app.use("/", function (req, res) {
-  io.on("connection", function (socket) {
-    console.log("A user connected");
-
-    //Whenever someone disconnects this piece of code executed
-    socket.on("disconnect", function () {
-      console.log("A user disconnected");
-    });
-  });
-  res.send({ message: "hello" });
-});
-
 io.on("connection", (socket) => {
   console.log("a user connected");
   socket.emit("newclientconnect", "Hey, welcome!");
